@@ -12,20 +12,16 @@
 * [Binary Search](https://github.com/the-praxs/leetcode#binary-search)
 * [Binary Search Tree](https://github.com/the-praxs/leetcode#binary-search-tree)
 * [Binary Tree](https://github.com/the-praxs/leetcode#binary-tree)
-* [Dynamic Programming]([https://](https://github.com/the-praxs/leetcode#dynamic-programming))
+* [Dynamic Programming](https://github.com/the-praxs/leetcode#dynamic-programming)
 * [Graph](https://github.com/the-praxs/leetcode#graph)
+* [Hash Table](https://github.com/the-praxs/leetcode#hash-table)
+* [Heap](https://github.com/the-praxs/leetcode#heap)
 * [Linked List](https://github.com/the-praxs/leetcode#linked-list)
 * [Stack](https://github.com/the-praxs/leetcode#stack)
 * [String](https://github.com/the-praxs/leetcode#string)
 
 ## Reference
 
-* C++
-    * [STL Time Complexity (Detailed)](http://www.cplusplus.com/reference/stl/)
-    * [STL Time Complexity (Summary)](http://john-ahlgren.blogspot.com/2013/10/stl-container-performance.html)
-    * [Data Structure and Algorithms Cheat Sheet](https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md)
-* Python
-    * [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 * Algorithms
     * [Rosetta Code](https://rosettacode.org)
     * [CP-Algorithms](https://cp-algorithms.com)
@@ -72,6 +68,7 @@
 | #   | Title | Solution | Time | Space | Difficulty | Note |
 | --- | ----- | -------- | ---- | ----- | ---------- | --- |
 |704  | [Binary Search](https://leetcode.com/problems/binary-search/) | [Python](./Python/704-binary-search.py) | __O(logn)__ | __O(1)__ | Easy | Use left and right pointers to keep track of middle point. |
+|278  | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | [Python](./Python/278-first-bad-version.py) | __O(logn)__ | __O(1)__ | Easy | Use left and right pointers to keep track of middle point. |
 
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -80,7 +77,7 @@
 ## Binary Search Tree
 | #   | Title | Solution | Time | Space | Difficulty | Note |
 | --- | ----- | -------- | ---- | ----- | ---------- | --- |
-|235  | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Python](./Python/110-balanced-binary-tree.py) | __O(logn)__ | __O(1)__ | Medium |   |
+|235  | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Python](./Python/110-balanced-binary-tree.py) | __O(logn)__ | __O(1)__ | Medium | Use DFS to return [isBalanced, height] of the tree and check height.  |
 
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -90,6 +87,7 @@
 | #   | Title | Solution | Time | Space | Difficulty | Note |
 | --- | ----- | -------- | ---- | ----- | ---------- | --- |
 |226  |[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Python](./Python/226-invert-binary-tree.py) |__O(n)__ |__O(n)__ | Easy | Use BFS to traverse the tree. |
+|110  | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Python](./Python/110-balanced-binary-tree.py) | __O(n)__ | __O(n)__ | Easy | Use DFS to traverse the tree. |
 
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -108,6 +106,25 @@
 | #   | Title | Solution | Time | Space | Difficulty | Note |
 | --- | ----- | -------- | ---- | ----- | ---------- | --- |
 |733  | [Flood Fill](https://leetcode.com/problems/flood-fill/) | [Python](./Python/733-flood-fill.py) | __O(n)__ | __O(n)__ | Easy | Use DFS to traverse the image. |
+|542  | [01 Matrix](https://leetcode.com/problems/01-matrix/) | [Python](./Python/542-01-matrix.py) | __O(mn)__ | __O(mn)__ | Medium | Use BFS to traverse the matrix. |
+
+<div align="right">
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
+</div>
+
+## Hash Table
+| #   | Title | Solution | Time | Space | Difficulty | Note |
+| --- | ----- | -------- | ---- | ----- | ---------- | --- |
+|383  | [Ransom Note](https://leetcode.com/problems/ransom-note/) | [Python](./Python/383-ransom-note.py) | __O(n)__ | __O(n)__ | Easy | Use HashMap as {character: character count}. |
+
+<div align="right">
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
+</div>
+
+## Heap
+| #   | Title | Solution | Time | Space | Difficulty | Note |
+| --- | ----- | -------- | ---- | ----- | ---------- | --- |
+|973  | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | [Python](./Python/973-k-closest-points-to-origin.py) | __O(n)__ | __O(n)__ | Medium | Use heapq library to keep track of the k closest points. |
 
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -117,6 +134,7 @@
 | #   | Title | Solution | Time | Space | Difficulty | Note |
 | --- | ----- | -------- | ---- | ----- | ---------- | --- |
 |21   | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Python](./Python/21-merge-two-sorted-lists.py) | __O(n+m)__ | __O(1)__ | Easy | Use extra ListNode to work the problem. |
+|141  | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Python](./Python/141-linked-list-cycle.py) | __O(n)__ | __O(1)__ | Easy | Use two pointers to traverse the list. |
 
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -126,6 +144,7 @@
 | #   | Title | Solution | Time | Space | Difficulty | Note |
 | --- | ----- | -------- | ---- | ----- | ---------- | --- |
 |20 |[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |[Python](./Python/20-valid-parentheses.py) |__O(n)__ |__O(n)__ |Easy |Use Stack and HashMap to check bracket order |
+|232 |[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) |[Python](./Python/232-implement-queue-using-stacks.py) |__O(1)__ |__O(n)__ |Easy | Use peek function to implement pop function. |
 
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
@@ -136,6 +155,7 @@
 | --- | ----- | -------- | ---- | ----- | ---------- | --- |
 |5    |[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Python](./Python/5-valid-palindrome.py) |__O(n)__ |__O(1)__ | Easy | Use two pointers to check characters on each side. |
 |242  |[Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Python](./Python/242-valid-anagram.py) |__O(n)__ |__O(1)__ | Easy | Use HashMap to count characters. |
+|3   |[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Python](./Python/3-longest-substring-without-repeating-characters.py) |__O(n)__ |__O(n)__ | Medium | Use HashMap to keep track of the last index of each character. |
 
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
